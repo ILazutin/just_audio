@@ -375,8 +375,8 @@
 - (void)removeItemObservers:(AVPlayerItem *)playerItem {
     [playerItem removeObserver:self forKeyPath:@"status"];
     //[playerItem removeObserver:self forKeyPath:@"playbackBufferEmpty"];
-    [playerItem removeObserver:self forKeyPath:@"playbackBufferFull"];
-    [playerItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
+    //[playerItem removeObserver:self forKeyPath:@"playbackBufferFull"];
+    //[playerItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
     //[playerItem removeObserver:self forKeyPath:@"playbackLikelyToKeepUp"];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:playerItem];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemFailedToPlayToEndTimeNotification object:playerItem];
