@@ -374,7 +374,7 @@
 
 - (void)removeItemObservers:(AVPlayerItem *)playerItem {
     [playerItem removeObserver:self forKeyPath:@"status"];
-    [playerItem removeObserver:self forKeyPath:@"playbackBufferEmpty"];
+    //[playerItem removeObserver:self forKeyPath:@"playbackBufferEmpty"];
     [playerItem removeObserver:self forKeyPath:@"playbackBufferFull"];
     [playerItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
     //[playerItem removeObserver:self forKeyPath:@"playbackLikelyToKeepUp"];
