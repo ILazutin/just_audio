@@ -1308,9 +1308,9 @@
     if (_indexedAudioSources) {
         for (int i = 0; i < [_indexedAudioSources count]; i++) {
             [self removeItemObservers:_indexedAudioSources[i].playerItem];
-            if (_indexedAudioSources[i].playerItem2) {
-                [self removeItemObservers:_indexedAudioSources[i].playerItem2];
-            }
+            //if (_indexedAudioSources[i].playerItem2) {
+            //    [self removeItemObservers:_indexedAudioSources[i].playerItem2];
+            //}
         }
         _indexedAudioSources = nil;
     }
